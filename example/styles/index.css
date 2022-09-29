@@ -1,0 +1,13 @@
+@import "https://unpkg.com/open-props";
+
+@define-mixin warn {
+    background-color: red;
+}
+
+body {
+    @mixin warn;
+
+    h1 {
+        @mixin warn;
+    }
+}
